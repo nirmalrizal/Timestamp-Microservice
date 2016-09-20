@@ -1,0 +1,20 @@
+<div class="container">
+  <h1 class="header">API Basejump: Timestamp Microservice</h1>
+  <label>By <a href="http://nirmalrizal.com.np">Nirmal Rijal</a>  | View project on <a href="http://github.com/nirmalrizal53/timestamp-microservice">Github</a></label>
+  <blockquote>
+    <p>User Stories:<p>
+      <ol>
+        <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</li>
+        <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+        <li>If it does not contain a date or Unix timestamp, it returns <code>null</code> for those properties.</li>
+      </ol>
+  </blockquote>
+
+  <h2>Example usage:</h2>
+    <code>https://nirmal-timestamp.herokuapp.com/November%2030,%201973</code><br>
+    <code>https://nirmal-timestamp.herokuapp.com/123456789</code>
+    <h2>Example output:</h2>
+    <code>{ "unix": 123456789, "natural": "November 30, 1973" }</code><br>
+    <code>{ "unix": Null, "natural": Null }</code>
+
+</div>
